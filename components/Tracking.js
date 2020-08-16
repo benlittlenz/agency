@@ -1,8 +1,8 @@
 import React from 'react';
 
-import TimeSVG from '../images/TimeSVG'
+import TrackSVG from '../images/TrackSVG'
 
-export default function Services() {
+export default function Tracking() {
     return (
         <section class="pb-20  -mt-24">
             <div class="container mx-auto px-4">
@@ -19,13 +19,13 @@ export default function Services() {
                         <p
                             class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
                         >
-                            Are you struggling to keep track of your team's performance across different jobs? 
-                            Say "goodbye" to spreadsheet hell and guesswork. Let **** keep track of your business's 
+                            Are you struggling to keep track of your team's performance across different jobs?
+                            Say "goodbye" to spreadsheet hell and guesswork. Let **** keep track of your business's
                             time tracking and focus on work that matters.
               </p>
                     </div>
                     <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                        <TimeSVG />
+                        <TrackSVG />
                     </div>
                 </div>
             </div>

@@ -2,18 +2,19 @@ import Layout from '@components/Layout'
 import PostList from '@components/PostList'
 
 import getPosts from '@utils/getPosts'
-import Header from '../components/Header'
 import Services from '../components/Services'
+import Tracking from '../components/Tracking'
 import Footer from '../components/Footer'
+import MainHomeSection from '../components/MainHomeSection'
 
 import ReportSVG from '../images/ReportSVG'
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <div>
-      <Header transparent/>
+      {/* <Header transparent/> */}
       <main>
-        <div
+        {/* <div
           class="relative pt-16 pb-32 flex content-center items-center justify-center"
           //style="min-height: 75vh;"
           style={{minHeight: '75vh'}}
@@ -62,7 +63,9 @@ const Index = ({ posts, title, description, ...props }) => {
               ></polygon>
             </svg>
           </div>
-        </div>
+        </div> */}
+
+        <MainHomeSection />
         
       <Services />
 
@@ -111,6 +114,7 @@ const Index = ({ posts, title, description, ...props }) => {
           </div>
         </section>
 
+        <Tracking />
 
         <section class="relative py-20">
           <div
