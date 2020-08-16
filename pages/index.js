@@ -2,17 +2,14 @@ import Layout from '@components/Layout'
 import PostList from '@components/PostList'
 
 import getPosts from '@utils/getPosts'
-import Services from '../components/Services'
-import Tracking from '../components/Tracking'
 import Footer from '../components/Footer'
 import MainHomeSection from '../components/MainHomeSection'
+import HomeServices from '../components/HomeServices'
 
-import ReportSVG from '../images/ReportSVG'
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <div>
-      {/* <Header transparent/> */}
       <main>
         {/* <div
           class="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -65,135 +62,43 @@ const Index = ({ posts, title, description, ...props }) => {
           </div>
         </div> */}
 
+
+
         <MainHomeSection />
-        
-      <Services />
 
+        <div className="flex content-center justify-center">
+          
+          <div className="">
 
-        <section class="relative py-20">
-          <div
-            class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            //style="height: 80px; transform: translateZ(0px);"
-            style={{ height: '80px', transform: `translateZ(0px)` }}
-          >
-            {/* <svg
-              class="absolute bottom-0 overflow-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon
-                class="text-white fill-current"
-                points="2560 0 2560 100 0 100"
-              ></polygon>
-            </svg> */}
-          </div>
-          <div class="container mx-auto px-4">
-            <div class="items-center flex flex-wrap">
-              <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-                <ReportSVG />
-              </div>
-              <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-                <div class="md:pr-12">
-                  <div
-                    class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
-                  >
-                    <i class="fas fa-rocket text-xl"></i>
-                  </div>
-                  <h3 class="text-3xl font-semibold">Insightful reports</h3>
-                  <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                    Access all of your essential information about your jobs or team all in one place. 
-                    Stay in the know thanks to ****** reporting!
-                </p>
-                </div>
-              </div>
+            <div className="">
+              <h1 className="text-sm font-bold leading-normal mt-0 text-red-600 uppercase">
+                Overview
+            </h1>
+
+              <h1
+                className="text-4xl font-extrabold font-normal leading-normal tracking-wider mt-0 mb-4 text-gray-800"
+              >Everything you need to manage your projects and your staff</h1>
             </div>
-          </div>
-        </section>
+            
+            <div className="w-3/6">
+              <p className="text-lg font-semibold font-normal leading-normal tracking-wide mt-0 text-gray-700">
+                ***** helps trades and service businesses organize and automate their operations, from scheduling jobs and time tracking to creating purchase orders and invoicing.
 
-        <Tracking />
+              
+            </p>
 
-        <section class="relative py-20">
-          <div
-            class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            //style="height: 80px; transform: translateZ(0px);"
-            style={{ height: '80px', transform: `translateZ(0px)` }}
-          >
-            <svg
-              class="absolute bottom-0 overflow-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon
-                class="text-white fill-current"
-                points="2560 0 2560 100 0 100"
-              ></polygon>
-            </svg>
-          </div>
-          <div class="container mx-auto px-4">
-            <div class="flex flex-wrap items-center mt-32">
-              <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                <div
-                  class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
-                >
-                  <i class="fas fa-user-friends text-xl"></i>
-                </div>
-                <h3 class="text-3xl mb-2 font-semibold leading-normal text-center">
-                  Restore clarity with automated time tracking
-              </h3>
-                <p
-                  class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
-                >
-                  Are you struggling to keep track of your team's performance across different jobs?
-                  Say "goodbye" to spreadsheet hell and guesswork. Let **** keep track of your business's
-                  time tracking and focus on work that matters.
-              </p>
-              </div>
-              <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                <div
-                  class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
-                >
-                  <img
-                    alt="..."
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
-                    class="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote class="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      class="absolute left-0 w-full block"
-                      //style="height: 95px; top: -94px;"
-                      style={{ height: '95px', top: '-94px' }}
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        class="text-pink-600 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 class="text-xl font-bold text-white">
-                      Restore clarity with automated time tracking
-                  </h4>
-                    <p class="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever happens.
-                  </p>
-                  </blockquote>
-                </div>
-              </div>
+            <p className="text-lg font-semibold font-normal mt-4 leading-normal tracking-wide mt-0 text-gray-700">
+              **** sets your business up with a pre-built CRM that is then customized to fit your business along with an intuitive mobile app supporting 
+                a wide range of tasks and features.
+            </p>
             </div>
+            
           </div>
-        </section>
-      
+
+        </div>
+
+        <HomeServices />
+
         <section class="pb-20 relative block bg-gray-900">
           <div
             class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -291,7 +196,7 @@ const Index = ({ posts, title, description, ...props }) => {
                         type="text"
                         class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                         placeholder="Full Name"
-                        //style="transition: all 0.15s ease 0s;"
+                      //style="transition: all 0.15s ease 0s;"
                       />
                     </div>
                     <div class="relative w-full mb-3">
@@ -303,7 +208,7 @@ const Index = ({ posts, title, description, ...props }) => {
                         type="email"
                         class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                         placeholder="Email"
-                        //style="transition: all 0.15s ease 0s;"
+                      //style="transition: all 0.15s ease 0s;"
                       />
                     </div>
                     <div class="relative w-full mb-3">
@@ -322,7 +227,7 @@ const Index = ({ posts, title, description, ...props }) => {
                       <button
                         class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                         type="button"
-                        //style="transition: all 0.15s ease 0s;"
+                      //style="transition: all 0.15s ease 0s;"
                       >
                         Send Message
                     </button>
